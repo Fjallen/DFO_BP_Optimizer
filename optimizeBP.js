@@ -1,5 +1,5 @@
 
-//value without rolls
+//prints coefficient for a spread
 const printCoefficient = (spread) =>{
     let base = 1
     for (const mod in spread){
@@ -9,6 +9,7 @@ const printCoefficient = (spread) =>{
     console.log(`coefficient is ${base / 100000000000}`)
     return base
 }
+//your mods, change this
 const mods = {
         AD: 109,
         CD: 96,
@@ -28,7 +29,7 @@ const modtoword = {
     PMI: "PMI",
     SI: "Str/Int"
 }
-
+//the bp option on your equipment, change this
 const bpOptions = [
     {
         piece: "pants",
