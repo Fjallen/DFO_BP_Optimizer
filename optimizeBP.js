@@ -3,10 +3,10 @@
 const printCoefficient = (spread) =>{
     let base = 1
     for (const mod in spread){
-        const val = spread[mod]
+        const val = spread[mod] + 100
         base *= val
     }
-    console.log(`coefficient is ${base / 100000000000}`)
+    console.log(`coefficient is ${base / 10000000000000}`)
     return base
 }
 //your mods, change this
